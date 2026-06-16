@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Fresh Bite | Buah Potong Segar</title>
+<title>Fresh Bite | Freshness in Every Bite</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
 }
 
 html{
@@ -24,56 +24,93 @@ html{
 }
 
 body{
-    background:#fffdf9;
+    font-family:'Quicksand',sans-serif;
+    background:
+    linear-gradient(
+    180deg,
+    #fffaf7,
+    #fff7f1,
+    #fffdf9
+    );
     color:#444;
 }
 
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.55);
+    z-index:999;
+}
+
+.logo{
+    font-family:'Fredoka',sans-serif;
+    font-size:30px;
+    font-weight:600;
+    color:#ff8c69;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-weight:700;
+}
+
 /* HERO */
+
 .hero{
-    height:100vh;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
     background:
-    linear-gradient(rgba(0,0,0,.35),
-    rgba(0,0,0,.35)),
-    url("images/fresh-bite-hero.jpg");
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.35)
+    ),
+    url('mix-fruit-premium.jpg');
     background-size:cover;
     background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
     color:white;
-    padding:20px;
 }
 
 .hero-content h1{
-    font-family:'Pacifico',cursive;
-    font-size:4rem;
-    margin-bottom:15px;
+    font-family:'Fredoka',sans-serif;
+    font-size:65px;
+    margin-bottom:20px;
 }
 
 .hero-content p{
-    font-size:1.2rem;
-    margin-bottom:30px;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
 }
 
 .btn{
-    display:inline-block;
-    padding:14px 32px;
-    background:#ff7f50;
+    background:#ff8c69;
     color:white;
     text-decoration:none;
+    padding:15px 35px;
     border-radius:50px;
-    transition:.3s;
-    font-weight:600;
+    font-weight:700;
+    display:inline-block;
+    transition:0.3s;
 }
 
 .btn:hover{
-    transform:translateY(-5px);
+    transform:translateY(-6px);
 }
 
-/* SECTION */
 section{
-    padding:80px 10%;
+    padding:90px 10%;
 }
 
 .title{
@@ -82,18 +119,76 @@ section{
 }
 
 .title h2{
-    font-family:'Pacifico',cursive;
-    font-size:2.3rem;
-    color:#ff7f50;
+    font-family:'Fredoka',sans-serif;
+    color:#ff8c69;
+    font-size:45px;
 }
 
-/* VIDEO */
+</style>
+</head>
+<body>
+    <nav>
+
+<div class="logo">
+🍓 Fresh Bite
+</div>
+
+<a href="#produk">
+Menu</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Fresh Bite 🍓</h1>
+
+<p>
+Kesegaran alami dalam setiap gigitan.
+Buah potong sehat, praktis, segar,
+dan siap menemani aktivitasmu kapan saja.
+</p>
+
+<a href="#video" class="btn">
+Lihat Selengkapnya
+</a>
+
+</div>
+
+</section>
+    <section id="video">
+
+<div class="title">
+<h2>Fresh Bite Experience</h2>
+</div>
+
+<div class="video-box">
+
+<video
+autoplay
+muted
+loop
+playsinline
+controls>
+
+<source src="fresh-bite-hero.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+</section>
+
+<style>
+
 .video-box{
     max-width:900px;
     margin:auto;
     overflow:hidden;
-    border-radius:30px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    border-radius:35px;
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.12);
 }
 
 .video-box video{
@@ -101,17 +196,87 @@ section{
     display:block;
 }
 
-/* ABOUT */
+</style>
+    <section>
+
+<div class="title">
+<h2>Tentang Fresh Bite</h2>
+</div>
+
+<div class="about">
+
+<p>
+
+Fresh Bite adalah brand buah potong segar
+yang menghadirkan pilihan buah berkualitas,
+sehat, dan praktis untuk dinikmati kapan saja.
+
+Nama Fresh Bite berasal dari kata
+Fresh yang berarti segar, alami, dan
+menyehatkan serta Bite yang berarti
+gigitan pertama yang memberikan rasa
+nikmat dan kesegaran.
+
+Setiap produk dipilih dari buah-buahan
+terbaik, diproses secara higienis,
+dan dikemas secara praktis agar siap
+dinikmati kapan pun dan di mana pun.
+
+</p>
+
+</div>
+
+</section>
+
+<style>
+
 .about{
+    max-width:850px;
+    margin:auto;
     text-align:center;
+    line-height:2;
+    font-size:18px;
 }
 
-.about p{
-    line-height:1.9;
-    margin-top:20px;
-}
+</style>
+    <section>
 
-/* BENEFIT */
+<div class="title">
+<h2>Manfaat Fresh Bite</h2>
+</div>
+
+<div class="benefits">
+
+<div class="card">
+🍍
+<h3>Kaya Vitamin</h3>
+<p>
+Membantu memenuhi kebutuhan vitamin dan mineral harian.
+</p>
+</div>
+
+<div class="card">
+🍉
+<h3>Menyegarkan</h3>
+<p>
+Memberikan kesegaran alami dan membantu menjaga hidrasi tubuh.
+</p>
+</div>
+
+<div class="card">
+🍓
+<h3>Praktis</h3>
+<p>
+Siap dimakan kapan saja tanpa perlu dikupas atau dipotong lagi.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<style>
+
 .benefits{
     display:grid;
     grid-template-columns:
@@ -121,197 +286,20 @@ section{
 
 .card{
     background:white;
-    padding:35px;
-    border-radius:30px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
+    padding:40px;
+    border-radius:35px;
+    text-align:center;
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.08);
 }
 
 .card h3{
-    margin-bottom:15px;
-    color:#ff7f50;
+    margin:20px 0;
+    color:#ff8c69;
 }
 
-/* PRODUCT */
-.products{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
-    gap:35px;
-}
-
-.product-card{
-    background:white;
-    border-radius:30px;
-    overflow:hidden;
-    box-shadow:0 12px 30px rgba(0,0,0,0.08);
-}
-
-.product-card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-}
-
-.product-content{
-    padding:25px;
-    text-align:center;
-}
-
-.product-content h3{
-    margin-bottom:10px;
-}
-
-.old-price{
-    text-decoration:line-through;
-    color:#999;
-}
-
-.new-price{
-    color:#ff7f50;
-    font-size:1.5rem;
-    font-weight:700;
-}
-
-/* WA */
-.whatsapp{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    background:#25d366;
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    color:white;
-    font-size:32px;
-    box-shadow:0 10px 20px rgba(0,0,0,.25);
-}
-
-/* FOOTER */
-footer{
-    background:#ff7f50;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-
-@media(max-width:768px){
-
-.hero-content h1{
-    font-size:3rem;
-}
-
-.hero-content p{
-    font-size:1rem;
-}
-
-}
 </style>
-
-</head>
-<body>
-
-<!-- HERO -->
-<section class="hero">
-
-<div class="hero-content">
-<h1>Fresh Bite 🍓</h1>
-
-<p>
-Kesegaran alami dalam setiap gigitan.
-Buah potong sehat, praktis, dan siap dinikmati kapan saja.
-</p>
-
-<a href="#video" class="btn">
-Lihat Selengkapnya
-</a>
-
-</div>
-</section>
-
-<!-- VIDEO -->
-<section id="video">
-
-<div class="title">
-<h2>Fresh Bite Experience</h2>
-</div>
-
-<div class="video-box">
-
-<video autoplay loop controls>
-<source src="video/fresh-bite.mp4" type="video/mp4">
-</video>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-<section class="about">
-
-<div class="title">
-<h2>Tentang Fresh Bite</h2>
-</div>
-
-<p>
-Fresh Bite adalah brand buah potong segar yang menghadirkan
-pilihan buah berkualitas, sehat, dan praktis untuk dinikmati
-kapan saja. Nama Fresh Bite berasal dari kata
-<strong>Fresh</strong> yang berarti segar, alami, dan menyehatkan,
-serta <strong>Bite</strong> yang berarti gigitan pertama yang
-memberikan rasa nikmat dan kesegaran.
-
-Setiap produk Fresh Bite dipilih dari buah-buahan berkualitas,
-diproses secara higienis, dan dikemas secara praktis sehingga
-siap menemani aktivitas sehari-hari.
-</p>
-
-</section>
-
-<!-- BENEFIT -->
-<section>
-
-<div class="title">
-<h2>Manfaat Fresh Bite</h2>
-</div>
-
-<div class="benefits">
-
-<div class="card">
-<h3>🍍 Kaya Vitamin</h3>
-<p>
-Membantu memenuhi kebutuhan vitamin dan mineral harian.
-</p>
-</div>
-
-<div class="card">
-<h3>🍉 Menyegarkan</h3>
-<p>
-Memberikan sensasi segar dan membantu menjaga hidrasi tubuh.
-</p>
-</div>
-
-<div class="card">
-<h3>🍓 Praktis</h3>
-<p>
-Siap dimakan kapan saja tanpa perlu dikupas dan dipotong lagi.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- PRODUK -->
-<section>
+    <section id="produk">
 
 <div class="title">
 <h2>Menu Fresh Bite</h2>
@@ -319,66 +307,51 @@ Siap dimakan kapan saja tanpa perlu dikupas dan dipotong lagi.
 
 <div class="products">
 
-<div class="product-card">
+<div class="product">
 
-<img src="images/mix-fruit-premium.jpg">
+<img src="mix-fruit-premium.jpg">
 
-<div class="product-content">
 <h3>Mix Fruit Premium</h3>
 
-<p>
-<span class="old-price">
+<p class="old">
 Rp15.000
-</span>
 </p>
 
-<p class="new-price">
+<p class="new">
 Rp12.000
 </p>
 
 </div>
 
-</div>
+<div class="product">
 
-<div class="product-card">
+<img src="pineapple-papaya.jpg">
 
-<img src="images/pineapple-papaya.jpg">
+<h3>Pineapple & Papaya</h3>
 
-<div class="product-content">
-<h3>Nanas & Pepaya</h3>
-
-<p>
-<span class="old-price">
+<p class="old">
 Rp10.000
-</span>
 </p>
 
-<p class="new-price">
+<p class="new">
 Rp8.000
 </p>
 
 </div>
 
-</div>
+<div class="product">
 
-<div class="product-card">
+<img src="fresh-watermelon.jpg">
 
-<img src="images/fresh-bite-hero.jpg">
+<h3>Fresh Watermelon</h3>
 
-<div class="product-content">
-<h3>Semangka Segar</h3>
-
-<p>
-<span class="old-price">
+<p class="old">
 Rp10.000
-</span>
 </p>
 
-<p class="new-price">
+<p class="new">
 Rp8.000
 </p>
-
-</div>
 
 </div>
 
@@ -386,19 +359,105 @@ Rp8.000
 
 </section>
 
-<footer>
-© 2026 Fresh Bite • Freshness in Every Bite 🍓
-</footer>
+<style>
 
-<!-- WHATSAPP -->
-<a
-class="whatsapp"
-href="https://wa.me/6281234567890?text=Hallo%20min,%20mau%20order%20Fresh%20Bite%20nya%20dong!"
+.products{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.product{
+    background:white;
+    border-radius:35px;
+    overflow:hidden;
+    text-align:center;
+    padding-bottom:25px;
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.product img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product h3{
+    margin:20px;
+}
+
+.old{
+    text-decoration:line-through;
+    color:#999;
+}
+
+.new{
+    color:#ff8c69;
+    font-size:30px;
+    font-weight:700;
+}
+
+</style>
+    <a
+class="wa"
+href="https://wa.me/6285280701520?text=Hallo%20min,%20mau%20order%20fresh%20bite%20nya%20dong!"
 target="_blank">
 
 💬
 
 </a>
 
+<footer>
+© 2026 Fresh Bite • Freshness in Every Bite 🍓
+</footer>
+
+<style>
+
+.wa{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    text-decoration:none;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.2);
+}
+
+footer{
+    background:#ff8c69;
+    color:white;
+    text-align:center;
+    padding:35px;
+    margin-top:80px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.hero-content p{
+    font-size:17px;
+}
+
+.title h2{
+    font-size:35px;
+}
+
+}
+
+</style>
+
 </body>
 </html>
+    
